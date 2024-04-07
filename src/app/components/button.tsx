@@ -10,6 +10,7 @@ export function Button({ title, isLoading = false, ...rest }: Props) {
       disabled={isLoading}
       activeOpacity={0.7}
       className="w0full h-14 bg-orange-500 items-center justify-center rounded-lg"
+      {...rest}
     >
       {isLoading ? (
         <ActivityIndicator className="text-green-500" />
